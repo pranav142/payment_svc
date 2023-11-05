@@ -4,9 +4,12 @@ from datetime import datetime, timedelta
 from dotenv import load_dotenv
 import os
 import requests
+from flask_cors import CORS
 
 URL = "http://54.210.73.216:5000"
 app = Flask(__name__)
+
+CORS(app)
 
 def update_streak(user_id: int, url: str):
     endpoint = f'/upgrade/{user_id}'
