@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os
 import requests
 
-URL = "http://3.84.46.162:5000"
+URL = "http://54.210.73.216:5000"
 app = Flask(__name__)
 
 def update_streak(user_id: int, url: str):
